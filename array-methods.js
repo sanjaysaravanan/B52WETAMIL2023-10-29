@@ -56,3 +56,18 @@ arrThree.splice(2, 2);
 // O/P: [3, 2] gets removed
 
 // arrThree --> [5, 4, 1]
+
+const students = [
+  { name: "John", totalMarks: 490 },
+  { name: "Sam", totalMarks: 492 },
+  { name: "Danial", totalMarks: 497 },
+  { name: "Emilie", totalMarks: 488 },
+  { name: "Anderson", totalMarks: 495 },
+];
+
+// Filter only the students who has scored more than 490
+console.log(
+  students.filter((student) => {
+    return student.totalMarks > 490;
+  })
+);
